@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmyshow</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BOOK A SHOW - TICKET BOOKING</h1>
+    </header>
+    <table id="table">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" id="name" pattern="[a-zA-Z]{2,}" required></td>
+        </tr>
+        <tr>
+            <td>Movie Name</td>
+            <td><input list="movie" name="movies" id="movies">
+                <datalist id="movie">
+                    <option value="Attarintiki Daredi">Attarintiki Daredi</option>
+                    <option value="Gabbar Singh">Gabbar Singh</option>
+                    <option value="Vakeel Saab">Vakeel Saab</option>
+                </datalist></td>
+        </tr>
+        <tr>
+            <td>Circle</td>
+            <td><input list="circles" name="circle" id="circle">
+                <datalist id="circles">
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Platinum">Platinum</option>
+                </datalist></td>
+        </tr>
+        <tr>
+            <td>Phone no</td>
+            <td><input type="text" name="phone" pattern="[0-9]{10}" ></td>
+        </tr>
+        <tr>
+            <td>Show date and time</td>
+            <td><input type="datetime-local" name="showdate" id="showdate"></td>
+        </tr>
+        <tr>
+            <td>No of Adults</td>
+            <td><input type="number" name="tickets" id="adults" min="1" max="10" ></td>
+        </tr>
+        <tr>
+            <td>No of children</td>
+            <td><input type="number" name="children" id="children" min="1" max="5" ></td>
+        </tr>
+
+    </table>
+    <div id="submission">
+    <input type="submit" name="submit" value="Book My Show" onclick="Booking_process();">
+    <input type="reset" style="margin-left:25px;" name="reset" id="reset" value="Reset"></div>
+    <script>
+        function Booking_process(){
+            alert('Booking Successful');
+        }
+    </script>
+</body>
+</html>

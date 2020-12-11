@@ -1,0 +1,22 @@
+body{
+    background-color: #00CED1;
+}
+h1{
+    color:#0000FF;
+    font-family: monospace;
+    text-align: center;
+}
+td{
+    color:#0C1584;
+}
+table{
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 40%;
+}
+#submission{
+    margin-left: 40%;
+}
+#resetting{
+    margin-left: 50%;
+}
